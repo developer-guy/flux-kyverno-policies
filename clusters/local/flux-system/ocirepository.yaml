@@ -7,6 +7,6 @@ spec:
   interval: 5m
   url: oci://ghcr.io/developer-guy/policies
   ref:
-    semver: "v0.1.0"
+    semver: "v1.x"
   secretRef:
     name: ghcr-auth
