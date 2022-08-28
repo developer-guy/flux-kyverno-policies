@@ -15,7 +15,7 @@ spec:
   timeout: 2m
   patches: # enforce all policies
     - patch: |
-        - op: add
+        - op: replace
           path: /spec/validationFailureAction
           value: enforce
       target:
