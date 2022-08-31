@@ -13,6 +13,11 @@ spec:
   prune: true
   wait: true
   timeout: 2m
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: kyverno-kyverno
+      namespace: kyverno
   patches: # enforce all policies
     - patch: |
         - op: replace
