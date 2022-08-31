@@ -1,0 +1,13 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: kyverno-controller
+  namespace: flux-system
+spec:
+  interval: 30m
+  url: https://github.com/kyverno/kyverno
+  ignore: |
+    /*
+    !/config/
+  ref:
+    semver: "1.x"

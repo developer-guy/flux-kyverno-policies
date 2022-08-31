@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+- kyverno-git-repository.yaml
+- kyverno-kustomization.yaml
 - ocirepository.yaml
 - kyverno-policies-kustomization.yaml
-- kyverno-helm-release.yaml
-- kyverno-helm-repository.yaml
